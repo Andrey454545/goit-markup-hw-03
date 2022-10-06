@@ -1,0 +1,317 @@
+/* колір осн. текста   #212121 */
+/* допоміж. колір текста  #757575 */
+/* білий   #FFFFFF */
+/* акцент   #2196F3 */
+/* втор. колір фона #F5F5F5 */
+
+/* var - функція в css  */
+
+:root {
+    --primary-text-color: #757575; /* всі шріфти чорні */
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --white-color: #FFFFFF;
+    --primary-white-color: #F5F5F5;
+
+}
+
+body{
+    /*background-color: #FFFFFF; */ /* фон документа */
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color); 
+    font-family: 'Roboto';
+} 
+
+/* селектор потомка (всі ссилки а)*/
+
+ul{
+    list-style: none; /* видалить всі точки перед словами */
+}
+
+
+/* header */
+.logo-header{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.studio{
+    color: #000000;
+}
+
+.list-html.current{ 
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    text-decoration: none;
+} 
+
+.list-html:hover {  
+    color: var(--title-text-color);
+} 
+
+.block{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+.block:hover {
+    color: orange;
+}
+
+.email{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.number{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+
+
+/* main */
+
+.main-head {
+    width: 1600px;
+    left: 0px;
+    background: #2F303A;
+}
+
+.section-main {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.section-main:hover { /*селектор состояния (при наведенні) до всіх */
+    color: orange;
+}
+
+/*селектор focus (при наведенні) до інтерактивних (кнопки, ссилки, елементи форми) */
+/*селектор active (при натиснені) до інтерактивних (кнопки, ссилки, елементи форми) */
+ /*селектор current (при наведенні (текущая страница)) до інтерактивних (кнопки, ссилки, елементи форми) */
+
+/* .section-main:active { 
+    color: rgb(255, 0, 0, 0.8);  
+}  */
+
+/* .section-main:current { 
+    color: rgb(255, 0, 0, 0.8);  
+}  */
+
+/*  color: rgb(255, 0, 0, 0.8);  4 цифра - прозрачность в % */
+
+
+.button-main {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    width: 216px;
+    height: 50px;  
+}
+
+/*descrip*/
+                /*прихований заголовок*/
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+/*section-foto*/
+.title-img{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+/*team*/
+.team-basic {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.first-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.profession {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+/*footer*/
+
+.footer-name {
+    position: absolute;
+    width: 1600px;
+    left: 0px;
+    background: #2F303A;
+}
+
+.logo-footer{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.logo-web{
+    color: var(--white-color);
+}
+
+.footer-address{
+    font-style: normal;   /*лише для тега адреси*/
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.item-footer{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+
+
+/* main-portfolio */
+
+.button-head.current{ 
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    width: 73px;
+    height: 38px;
+} 
+
+.button-portfolio{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    width: 125px;
+    height: 38px;
+}
+
+.button-portfolio:hover, :focus {  
+    color: var(--white-color);
+    background-color: var(--accent-color);
+} 
+
+
+
+/*section-foto*/
+
+.project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+
+/*footer-port*/
+.footer-name-port {
+    position: absolute;
+    width: 1600px;
+    left: 0px;
+    background: #2F303A;
+}
