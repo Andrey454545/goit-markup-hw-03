@@ -14,11 +14,9 @@
 <body> <!-- header-->
     <header> 
         <div class="header-container">
-            
                 <a href="./index.html" class="logo-header">
                 Web<span class="studio">Studio</span></a> 
-            
-            <nav>
+            <nav class="frame-line">
                 <ul class="site-nav">    <!-- ul список-->
                     <li><a href="./index.html"
                         class="list-html current">Студія</a></li>  
@@ -44,8 +42,8 @@
             </div>
         </section>
 
-        <section> <!-- descrip -->
-            <div class="descrip-main entrance">
+        <section class="descrip-section"> <!-- descrip -->
+            <div class="main-container entrance">
                 <h2 class="visually-hidden">Галерея</h2> 
                 <ul class="descrip-list">    
                     <li class="title-descrip">                   
@@ -74,8 +72,8 @@
             </div>
         </section>
 
-        <section">  <!-- section-foto-->
-            <div class="foto-frame">
+        <section class="foto-section">  <!-- section-foto-->
+            <div class="main-container">
                 <h2 class="title-img">Чим ми займаємося</h2>
                 <ul class="foto-list">    <!-- ul список-->
                     <li><img src="./img/комп_1.jpg" alt="комп_1" width="370" height="294"></li>
@@ -85,29 +83,37 @@
             </div>
         </section>
 
-        <section>    <!-- team-->
-            <div class="team-professional">
+        <section class="team-section">    <!-- team-->
+            <div class="main-container hue">
                 <h2 class="team-basic">Наша команда</h2>
                 <ul class="team-list">    <!-- ul список-->
                     <li class="team-person">
                         <img src="./img/команда1.jpg" alt="команда1" width="270" height="260">
-                        <h3 class="first-name">Ігор Дем'яненко</h3>
-                        <p class="profession">Product Designer</p>               
+                        <div class="text-team">
+                            <h3 class="first-name">Ігор Дем'яненко</h3>
+                            <p class="profession">Product Designer</p>  
+                        </div>             
                     </li>
                     <li class="team-person">
                         <img src="./img/команда2.jpg" alt="команда2" width="270" height="260">
-                        <h3 class="first-name">Ольга Рєпіна</h3>
-                        <p class="profession">Frontend Developer</p>              
+                        <div class="text-team">
+                            <h3 class="first-name">Ольга Рєпіна</h3>
+                            <p class="profession">Frontend Developer</p> 
+                        </div>
                     </li>
                     <li class="team-person">
                         <img src="./img/команда3.jpg" alt="команда3" width="270" height="260">
-                        <h3 class="first-name">Микола Тарасов</h3>
-                        <p class="profession">Marketing</p>                
+                        <div class="text-team">
+                            <h3 class="first-name">Микола Тарасов</h3>
+                            <p class="profession">Marketing</p> 
+                        </div>
                     </li>
                     <li class="team-person">
                         <img src="./img/команда4.jpg" alt="команда4" width="270" height="260">
-                        <h3 class="first-name">Михайло Єрмаков</h3>
-                        <p class="profession">UI Designer</p>               
+                        <div class="text-team">
+                            <h3 class="first-name">Михайло Єрмаков</h3>
+                            <p class="profession">UI Designer</p> 
+                        </div>
                     </li>    
                 </ul>
             </div>
@@ -115,8 +121,8 @@
 
     </main>
 
-    <footer>    <!-- footer-->
-        <div class="footer-picture">
+    <footer class="footer-section date">    <!-- footer-->
+        <div class="main-container">
             <a href="./index.html" class="logo-footer">
             Web<span class="logo-web">Studio</span></a>     
             

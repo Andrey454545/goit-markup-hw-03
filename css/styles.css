@@ -36,11 +36,14 @@ ul{
 
 /* header */
 
+.line {
+    border-bottom: 1px solid #ECECEC; /* робить лінію під контентом */
+}
+
 .header-container {
-    border-bottom: solid #ECECEC; /* робить лінію під контентом */
     width: 1200px;
-    padding: 15px 0;
-    height: 80px;
+    padding: 24px 0;
+    /*height: 80px; */      /* якщо padding то висота не потрібна */
     margin: 0 auto;
     display: flex;
     align-items: center;    /* вирівнюємо по центру текст */
@@ -62,12 +65,15 @@ ul{
     color: #000000;
 }
 
+.frame-line {
+    margin-left: 93px;
+}
+
 .site-nav {
     width: 281px;
     height: 16px;
     display: flex;
     gap: 50px;
-    margin-left: 93px;
 }
 
 .list-html.current{ 
@@ -126,17 +132,18 @@ ul{
 /* main */
 
 .main-head {
-    width: 1600px;
     height: 600px;
-    left: 0px;
     background: #2F303A;
-    margin: 0 auto;     /* вирівнювання по центру */
+    margin: 0 auto;     /*розміщення по середині*/
     padding-top: 200px;
     padding-bottom: 30px;
 }
 
 .main-container {
-    
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;         
 }
 
 .section-main {
@@ -186,10 +193,9 @@ ul{
 
 /*descrip*/
                 /*прихований заголовок*/
-.descrip-main {
-    width: 1170px;
-    padding: 94px 0;
-    margin: 0 auto;
+.descrip-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .entrance {
@@ -239,12 +245,9 @@ ul{
 
 /*section-foto*/
 
-
-.foto-frame {
-    width: 1170px;
-    padding: 94px 0;
-    margin: 0 auto; 
-    /*padding-bottom: 0;*/
+.foto-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .title-img{
@@ -264,13 +267,16 @@ ul{
 
 /*team*/
 
-.team-professional {
-    width: 1170px;
-    padding: 94px 0;
-    margin: 0 auto;         /*розміщення по середині*/
-    background-color: #F5F4FA;
-    /*outline: 2px solid red; */ /* контур контейнера*/
+.team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
+
+.hue {       
+    background-color: #F5F4FA;
+}
+
+ /*outline: 2px solid red; */ /* контур контейнера*/
 
 .team-basic {
     font-weight: 700;
@@ -295,6 +301,13 @@ ul{
     height: 368px;
 }
 
+.text-team {
+    width: 270px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
 .first-name {
     font-weight: 500;
     font-size: 16px;
@@ -302,7 +315,7 @@ ul{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
-    margin-top: 30px;
+    white-space: nowrap;
 }
 
 .profession {
@@ -313,15 +326,18 @@ ul{
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin-top: 10px;
+    white-space: nowrap;
 }
 
 /*footer*/
 
-.footer-picture {
-    width: 1600px;
-    padding: 60px 0;
+.footer-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.date {
     height: 252px;
-    margin: 0 auto;
     background: #2F303A;
 }
 
@@ -333,7 +349,6 @@ ul{
     letter-spacing: 0.03em;
     color: var(--accent-color);
     text-decoration: none;
-    margin-left: 215px;
 }
 
 .logo-web{
@@ -341,7 +356,6 @@ ul{
 }
 
 .address-picture {
-    margin-left: 215px;
     margin-top: 20px;
     width: 231px;
     height: 21px;
@@ -380,27 +394,23 @@ ul{
 }
 
 
+/* section-portfolio */
 
-/* main-section */
-
-.main-portfolio {
+.section-portfolio {
     width: 1170px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     margin: 0 auto;
-    padding: 94px 0;
-}
-
-/* list-button */
-
-.list-button {
-    width: 575px;
-    height: 54px;
-    margin: 0 auto;
-    margin-bottom: 34px;
 }
 
 .button-roster {
+    width: 1200px;
+    padding-left: 312px;
+    padding-right: 312px;
+    margin: 0 auto;
     display: flex;
-    gap: 8px;   
+    gap: 8px; 
+    margin-bottom: 50px;  
 }
 
 .button-head.current { 
@@ -444,6 +454,10 @@ ul{
 /* foto-wrap */
    
 .foto-wrap {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
     display: flex;     /*розміщення в ряд*/
     flex-wrap: wrap; 
     gap: 30px;
@@ -453,13 +467,14 @@ ul{
 .foto-item {
     width: 370px;
     height: 404px;
+    border: 1px solid #ECECEC;
 }
 
 .text-frame {
     width: 370px;
     padding: 20px 24px;
     margin: 0 auto;
-    margin-bottom: 20px;
+   /* border: 1px solid #ECECEC; */
 }
 
 .project-name {
@@ -480,5 +495,5 @@ ul{
     color: var(--primary-text-color);
     width: 322px;
     height: 30px;
-    
+    margin-top: 4px;    
 }
